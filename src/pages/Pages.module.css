@@ -56,4 +56,6 @@
     flex-direction: column;
   }
   
- 
+ .right_side {
+    width: 100%;
+ }
