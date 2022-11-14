@@ -1,0 +1,77 @@
+.loginCard {
+  background: #f1f1f1 ;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid rgba(42, 41, 41, 0.3);
+  padding: 20px 30px;
+  border-radius:6px;
+  min-width: 40%;
+  
+}
+@media only screen and (max-width: 425px){
+	.loginCard {
+		margin-top: 50px;
+		min-width: 70%;
+	}
+}
+
+.group{
+	margin-bottom:20px;
+}
+
+.label,
+.input,
+.button {
+    width:100%;
+	color:rgb(42, 41, 41);
+	display:block;
+}
+
+.input,
+.button{
+	border: 1px solid #1161ee;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+
+input[data-type="password"]{
+	-webkit-text-security:circle;
+}
+.label{
+	color:#1161ee;
+	font-size: 1rem;
+    margin-bottom:6px;
+}
+.button{
+	background:#1161ee;
+    color: #fff;
+    font-weight: 600;
+}
+.button:hover {
+    cursor: pointer;
+}
+.check:checked + label{
+	color:#1161ee;
+}
+
+/* SIDEBAR */
+
+.logo {
+	font-size: 2.5rem;
+	color: #1161ee;
+	border: 2px solid #1161ee;
+	width: max-content;
+	padding: 5px;
+	margin-left: 2rem;
+}
+
+.dashboard_link {
+	display: block;
+	text-decoration: none;
+	color: rgb(42, 41, 41);
+	padding: 1.2rem 0 1.2rem 2rem;
+	font-size: 1.3rem;
+}
+.dashboard_link:hover {
+ background-color: rgba(17, 98, 238, 0.6);
+}
