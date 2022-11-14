@@ -1,61 +1,80 @@
 .container {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .loginCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;                                       
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcomeDiv {
-    width: 100%;
-    height: 100vh;
-    background-image: url( '/src/assets/login-bg.svg' );
-    Background-size: cover;
-    Background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: azure;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/src/assets/login-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: azure;
 }
 
 .welcomeBackHeader {
-    font-size: 3rem;
-    margin-bottom: -15px;
-    color: azure;
-
+  font-size: 3rem;
+  margin-bottom: -15px;
+  color: azure;
 }
 
 .loginDiv {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .loginDivMobile {
-    background-image: url( '/src/assets/login-bg.svg' );
-    Background-size: cover;
-    Background-repeat: no-repeat;
+  background-image: url("/src/assets/login-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .dashboard {
-    display: flex;
+  display: flex;
   height: 100vh;
   width: 100%;
 }
 .sidebar {
-    width: 20%;
-    background-color: #f7f7f7;
-    border-right: solid 1px #e3e3e3;
-    display: flex;
-    flex-direction: column;
-  }
-  
- .right_side {
-    width: 100%;
- }
+  width: 20%;
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  display: flex;
+  flex-direction: column;
+}
+
+.right_side {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* STUDENTS PAGE */
+
+.student_detail_container {
+  padding: 10px 30px;
+}
+
+.greeting_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* align-items: center; */
+}
+
+.subjects_grids {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
