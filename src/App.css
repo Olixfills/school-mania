@@ -15,18 +15,7 @@ body {
 
  /* Home Screen Styles */
 
-.home-container {
-  background-image: url( '/src/assets/home-bg.svg' );
-  Background-size: cover;
-  Background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 
 h1 {
   font-weight: 700;
@@ -34,18 +23,13 @@ h1 {
 
 }
 
-.home-btn {
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border: 2px solid rgb(42, 41, 41);
-  border-radius: 6px;
-  color: rgb(42, 41, 41);
-  padding: 8px 16px;
-  transition: all 200ms ease-in-out;
-}
 
-.home-btn:hover {
-  font-size: 1.25rem;
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
 }
-
+main h5 {
+  margin-top: 0;
+  font-weight: 400;
+  text-align: justify;
+}

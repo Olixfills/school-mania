@@ -5,8 +5,9 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const container = document.getElementById('root');
+const container = document.getElementById('root') || document.createElement('div');
 const root = createRoot(container);
+
 
 root.render(
   <React.StrictMode>

@@ -1,10 +1,142 @@
 {
-    "users": [
+  "users": [
+    {
+      "firstName": "Jaymie",
+      "lastName": "Adeola",
+      "email": "jaymie@test.com",
+      "level": "SS1A",
+      "teacher": "Miss Wendy",
+      "courses": 4,
+      "password": "test1234",
+      "id": "user1"
+    },
+    {
+      "firstName": "Chuks",
+      "lastName": "Williams",
+      "email": "chuks@test.com",
+      "level": "SS2B",
+      "teacher": "Mr Jackson",
+      "courses": 4,
+      "password": "test1234",
+      "id": "user2"
+
+    }
+  ],
+
+  "subjects": [
+    {
+      "title": "Mathematics",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Pure-mathematics-formul%C3%A6-blackboard.jpg",
+      "description": "Mathematics encompasses topics from algebra, analysis, arithmetic, calculus, geometry and number theory that are frequently taught at the primary or secondary school level.",
+      "id": "mth001",
+      "code": "MTH001",
+      "tutor": "Miss Wendy",
+      "students": 24,
+      "topics": [
         {
-            "username": "jaymie",
-            "email": "jaymie@test.com",
-            "firstName": "Jaymie",
-            "lastName": "Williams"
+          "title": "Introduction to Algebra",
+          "time": "3hrs 45mins",
+          "resources": "12 Resources"
+        },
+        {
+          "title": "Introduction to Analysis",
+          "time": "2hrs 5mins",
+          "resources": "8 Resources"
+        },
+        {
+          "title": "Introduction to Calculus",
+          "time": "4hrs 2mins",
+          "resources": "16 Resources"
+        },
+        {
+          "title": "Introduction to Geometry",
+          "time": "3hrs",
+          "resources": "4 Resources"
+        },
+        {
+          "title": "Number Theory",
+          "time": "2hrs 45mins",
+          "resources": "3 Resources"
         }
-    ]
+      ]
+    },
+    {
+      "title": "English Language",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPWIBGIqmn-WPc5XV1H4XeiFwa2_QT_owvxyOFMs4WitAV8oORk8Z3cnd2_wQvik7ZMzA&usqp=CAU",
+      "description": "This course is designed for foreigners learning English at an ABC and Elementary levels to acquire and develop the English language knowledge and skills. The course is defined within the common reference European Framework and corresponds to the levelic division into Pre-Intermediate and Intermediate. ",
+      "id": "eng001",
+      "code": "ENG001",
+      "tutor": "Miss Antonne",
+      "students": 26,
+      "topics": [
+        {
+          "title": "Introduction to English",
+          "time": "2hrs 45mins",
+          "resources": "10 Resources"
+        },
+        {
+          "title": "Essays",
+          "time": "6hrs 5mins",
+          "resources": "16 Resources"
+        },
+        {
+          "title": "Punctuation",
+          "time": "3hrs 28mins",
+          "resources": "12 Resources"
+        }
+      ]
+    },
+    {
+      "title": "Physics",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgNpagNKgcmvwrsjLmeTcsQIPmEq4YBtq_0A&usqp=CAU",
+      "description": "The branch of science concerned with the nature and properties of matter and energy. The subject matter of physics includes mechanics, heat, light and other radiation, sound, electricity, magnetism, and the structure of atoms.",
+      "id": "phy001",
+      "code": "PHY001",
+      "tutor": "Mr Tunde",
+      "students": 14,
+      "topics": [
+        {
+          "title": "Units and Measurements",
+          "time": "5hrs 45mins",
+          "resources": "21 Resources"
+        },
+        {
+          "title": "Laws of Motion",
+          "time": "2hrs 5mins",
+          "resources": "18 Resources"
+        },
+        {
+          "title": "Work, Energy, and Power",
+          "time": "8hrs 2mins",
+          "resources": "26 Resources"
+        },
+        {
+          "title": "Gravitation",
+          "time": "5hrs",
+          "resources": "14 Resources"
+        }
+      ]
+    },
+    {
+      "title": "Chemistry",
+      "image": "https://council.science/wp-content/uploads/2017/04/IUPAC-feature-image-1400x600.jpg",
+      "description": "The branch of science concerned with the substances of which matter is composed, the investigation of their properties and reactions, and the use of such reactions to form new substances.",
+      "id": "chm001",
+      "code": "CHM001",
+      "tutor": "Mr Anthony",
+      "students": 14,
+      "topics": [
+        {
+          "title": "In-Organic Chemistry",
+          "time": "13hrs 55mins",
+          "resources": "32 Resources"
+        },
+        {
+          "title": "Organic Chemistry",
+          "time": "12hrs 55mins",
+          "resources": "28 Resources"
+        }
+      ]
+    }
+  ]
 }

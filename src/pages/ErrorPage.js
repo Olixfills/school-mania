@@ -6,7 +6,7 @@ export default function ErrorPage() {
   const error = useRouteError();
 
   return (
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
+    <div data-testid="errPage" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
        <h3>{error.status}</h3> 
