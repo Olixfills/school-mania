@@ -14,6 +14,7 @@ const Dashboard = () => {
   const dispatch = useDispatch()
   const { width } = useWindowSize();
   const mobile = width <= 768;
+  const [sidebarOpen, setsideBarOpen] = React.useState(false)
 
 
   return (
@@ -24,8 +25,11 @@ const Dashboard = () => {
         </div>
       )}
       <div className={Styles.right_side}>
-        <NavBar user={user} />
+        <NavBar user={user} setsideBarOpen={setsideBarOpen}/>
         <Outlet />
+        {sidebarOpen && <div className={Styles.mobileDash}>
+        <SideBar navigate={navigate} dispatch={dispatch} setsideBarOpen={setsideBarOpen} sb={true}/>
+        </div>}
       </div>
     </div>
   );

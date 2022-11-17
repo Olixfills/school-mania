@@ -24,7 +24,6 @@ const LoginCard = ({users, navigate, dispatch}) => {
     } else {
       setErrMsg(true)
     }
-
     
   };
 

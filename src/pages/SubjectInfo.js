@@ -17,7 +17,6 @@ const SubjectInfo = () => {
       .catch(console.log);
   }, [subjectId]);
 
-  console.log(subject);
   return (
     <div data-testid="subject">
       <div className={Styles.breadcrumbs}>

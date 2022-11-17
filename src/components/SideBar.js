@@ -1,8 +1,7 @@
 import React from "react";
 import Styles from "./Comps.module.css";
-import {clearUser} from '../features/userSlice'
-
-
+import { clearUser } from "../features/userSlice";
+import { CgCloseR } from "react-icons/cg";
 
 const menuLinks = [
   { title: "Dashboard", link: "/student" },
@@ -11,18 +10,28 @@ const menuLinks = [
   { title: "Settings", link: "/coming-soon" },
 ];
 
-const SideBar = ({navigate, dispatch}) => {
+const SideBar = ({ navigate, dispatch, sb, setsideBarOpen }) => {
   const active = "Dashboard";
 
-
-const onLogout = () => {
-dispatch(clearUser())
-navigate('/')
-}
+  const onLogout = () => {
+    dispatch(clearUser());
+    navigate("/");
+  };
 
   return (
     <div data-testid="sidebar">
-      <h2 className={Styles.logo}>SM</h2>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h2 className={Styles.logo}>SM</h2>
+        {sb && <div onClick={() => setsideBarOpen((r) => !r)} style={{marginRight: '20px', fontSize: '1.5rem', color: '#1161ee'}}>
+          <CgCloseR />
+        </div>}
+      </div>
       <div>
         {menuLinks.map((item) => (
           <a
@@ -35,7 +44,13 @@ navigate('/')
             {item.title}
           </a>
         ))}
-        <div className={`${Styles.dashboard_link} ${Styles.logout}`} onClick={onLogout}> Logout</div>
+        <div
+          className={`${Styles.dashboard_link} ${Styles.logout}`}
+          onClick={onLogout}
+        >
+          {" "}
+          Logout
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { TbMessages } from "react-icons/tb";
 import { TiThMenu } from "react-icons/ti";
 
 
-const NavBar = ({user}) => {
+const NavBar = ({user, setsideBarOpen}) => {
 
 
   const { width } = useWindowSize();
@@ -23,7 +23,7 @@ const NavBar = ({user}) => {
           <TbMessages />
         </div>
         <div>{`${user?.firstName.charAt(0)}${user?.lastName.charAt(0)}`}</div>
-        {mobile && <div><TiThMenu /></div>}
+        {mobile && <div onClick={()=>setsideBarOpen((r)=> !r)}><TiThMenu /></div>}
       </div>
     </nav>
   );

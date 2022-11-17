@@ -6,7 +6,7 @@ import SingleSubjectHeader from '../SingleSubjectHeader';
 import StudentCard from '../StudentCard';
 import SubjectCard from '../SubjectCard';
 import TopicCard from '../TopicCard';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 
 test("Login Card renders successfully", ()=>{
@@ -14,6 +14,7 @@ test("Login Card renders successfully", ()=>{
     const loginCard = screen.getByTestId(/login-card/i)
     expect(loginCard).toBeInTheDocument()
 })
+
 
 test("Sidebar renders successfully", ()=>{
     render(<SideBar />);

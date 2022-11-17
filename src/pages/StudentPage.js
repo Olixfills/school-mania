@@ -18,8 +18,6 @@ const StudentPage = () => {
 
   const { width } = useWindowSize();
   const mobile = width <= 768;
-console.log(user)
-console.log(subjects)
 
   useEffect(()=>{
     dispatch(getAllSubjects())
